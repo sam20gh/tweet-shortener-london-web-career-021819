@@ -15,14 +15,14 @@ end
 
 
 def word_substituter(tweet)
-    tweet_array = tweet.split.map do |word|
-        if dictionary.keys.include?(word.downcase)
-                word = dictionary[word.downcase]
-        else
-            word
-        end
+  tweetArray = tweet.split.collect do |word|
+    if dictionary.keys.include?(word.downcase)
+      word = dictionary[word.downcase]
+    else
+      word
     end
-    puts tweet_array.join(" ")
+  end
+  tweetArray.join(" ")
 end
 
 
