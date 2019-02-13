@@ -27,7 +27,8 @@ end
 
 
 
-def bulk_tweet_shortener
+def bulk_tweet_shortener(tweet)
+  puts word_substituter
 end
 
 
